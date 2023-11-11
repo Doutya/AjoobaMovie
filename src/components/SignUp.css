@@ -1,29 +1,20 @@
 .display_signup{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: flex-start; /* Align children at the top */
+    align-items: center; /* Center the content horizontally */
+    /* justify-content: center; /* Center the content horizontally */
+    /* align-items: center; Center the content vertically */ 
     min-height: 100vh;
-    background-image: url("https://images.hdqwalls.com/wallpapers/desert-night-minimal-4k-hp.jpg");
+    background-image: url("../../public/u2.png");
     background-repeat: no-repeat;
     background-size:  100% 100vh
+
   }
 
-.welcome_message{
-    align-items: center;
-    color : white; 
-  }
-  
-  .welcome_heading{
-    padding-top: 270px;
-    padding-left: 175px;
-    font-weight: 600;
-    font-size: 60px;
-  }
-  
-  .login_message{
-    font-weight: 500;
-    font-size: 30px;
-    padding-top: 15px;
-    padding-left: 170px;
+.image-container {
+    margin-top: 20px; /* Add margin to push the image down from the top */
+    padding-bottom: 10px;
   }
 
 .signupdeclare{
@@ -36,37 +27,51 @@
 }
 
 .sign_up_container{
-    padding-top: 0%;
-    width: 400px;
-    height: 500px;
-    margin-right: 170px;
-    margin-top: 70px;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);;
+    /* padding-top: 0%; */
+    /* width: 400px;
+    height: 500px; */
+    /* margin-right: 170px; */
+    /* margin-top: auto;
+    margin-bottom: auto; */
+    /* box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);;
+    border-radius: 15px;
+    background-color: white; */
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* margin:auto; */
+    padding-top: 20px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     border-radius: 15px;
     background-color: white;
+    width: 80%;
+    max-width: 400px; /* Set a maximum width for better responsiveness */
     
   }
   
   .signForm{
   
     padding-top: 15px;
-    margin-left : 80px;
-    width: 70%;
+    /* margin-left : 80px; */
+    width: 100%;
+    /* margin-left: auto;
+    margin-right: auto; */
   
   }
   
   .input_fld{
     cursor: pointer;
     margin-top: 15px;
-    padding: 14px 40px;
+    padding: 14px 20px;
   }
   
   .create_Acc{
     cursor: pointer;
-    padding: 14px 24px;
+    padding: 14px 20px;
     width: 70%;
     margin-top: 30px;
     margin-left: 20px;
+    margin-top: 10px;
+    text-align: black;
   
   }
   
@@ -115,6 +120,7 @@
   cursor: pointer;
   color: black;
   margin-top: 15px;
-  padding: 14px 40px;
+  padding: 14px 20px;
 
 }
+
